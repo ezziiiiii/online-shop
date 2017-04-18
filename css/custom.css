@@ -1,0 +1,205 @@
+body {
+	background-color: #EDEDED;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	padding-top: 10px;
+}
+header p {
+	color: #888888;
+}
+.menu {
+	background-color: #FFFFFF;
+	padding-top: 20px;
+}
+.menu .navbar {
+	background-color: #FFFFFF;
+	border: 0px;
+}
+.menu .navbar button {
+	background-color: #0AB3A3;
+	color: #FFFFFF;
+}
+.navbar-brand {
+	font-family: 'Indie Flower', cursive;
+}
+.banner {
+	background-color: #FFFFFF;
+	padding: 20px 0px;
+}
+.banner .banner2 {
+	padding: 5px;
+}
+.product {
+	background-color: #FFFFFF;
+	padding: 15px;	
+}
+.title {
+	margin-bottom: 20px;
+	color: #0AB3A3;
+	padding: 10px 0px;
+}
+.services {
+	background-color: #FFFFFF;
+	padding: 15px;
+}
+.services .glyphicon {
+	font-size: 50px;
+}
+.latespost {
+	background-color: #FFFFFF;
+}
+.latespost button {
+	background-color: #0AB3A3;
+	color: #FFFFFF;
+}	
+.latespost .allpost {
+	margin-bottom: 40px;
+}
+.latespost .post {
+	margin-bottom: 20px;
+}
+.latespost .post p {
+	font-size: 18px;
+}
+.latespost .post small {
+	color: #0AB3A3;
+}
+.latespost .post .plast {
+	color: #888888;
+	font-size: 14px;
+}
+.latespost .post img {
+	width: 250px;
+}
+footer {
+	background-color: #F6F6F6;
+	padding: 15px;
+	border-bottom: 1px solid silver;
+}
+footer .list p {
+	color: #333333;
+}
+footer p {
+	color: #888888;
+}
+footer img {
+	margin-bottom: 10px;
+}
+footer .panel form button {
+	background-color: #0AB3A3;
+	color: #FFFFFF;
+}
+footer ul {
+	padding: 0px
+}
+footer ul li {
+	list-style: none;
+	line-height: 30px;
+}
+footer ul li a {
+	font-size: 12px;
+	color: #888888;
+}
+footer ul li a:hover {
+	text-decoration: none;
+}
+footer .panel {
+	background-color: transparent;
+}
+footer .panel input {
+	margin-bottom: 5px;
+}
+.footerbot {
+	background-color: #F6F6F6;
+	padding: 15px;
+	color: #888888;
+}
+.footerbot p {
+	margin: 0px;
+	padding: 0px 15px;
+}
+
+/*----------------------------LAPTOP------------------------------*/
+.laptop {
+	background-color: #FFFFFF;
+}
+.laptop .selection {
+	padding: 20px 0px;
+}
+
+/*----------------------------ACCESSORIES------------------------------*/
+.accessories {
+	background-color: #FFFFFF;
+}
+.accessories .selection {
+	padding: 20px 0px;
+}
+
+/*----------------------------CONTACT------------------------------*/
+iframe {
+	width: 1140px;
+	padding: 20px 0px;
+	background-color: white;
+	margin-bottom: 30px;
+}
+
+.kontak {
+	background-color: white;
+	padding: 20px;
+}
+.kontak .glyphicon {
+	font-size: 30px;
+}
+.kontak p {
+	color: #0AB3A3;
+}
+.pesan {
+	background-color: white;
+	padding: 30px 0px;
+}
+.pesan h3 {
+	color: #0AB3A3;
+}
+.pesan .line hr {
+	margin: 20px;
+}
+.pesan .form {
+	padding: 0px 40px;
+	margin-bottom: 20px;
+}
+.pesan .form #komen {
+	height: 150px;
+}
+.pesan #submit button {
+	background-color: #0AB3A3;
+	color: white;
+}
+
+/*----------------------------SHOPPINGCART------------------------------*/
+.wrapper {
+	background-color: white;
+	padding: 30px 15px;
+}
+
+/*---------------------------SIGNIN dan SIGNUP----------------------*/
+
+.signin{
+    width: 100%;
+    vertical-align: central;
+}
+
+.signup{
+    width: 100%;
+    vertical-align: central;
+}
+.signup input[type] {
+	margin-bottom: 20px;
+}
+.well-custom{
+    float:none;
+    margin: 100px auto;
+    max-width: 50%;
+}
+

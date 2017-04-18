@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign Up</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="col-md-12">
+                <p>Welcome to our online store</p>
+            </div>
+        </div> 
+    </header><!--end of header-->
+
+  <div class="menu container">
+            <div class="col-md-2">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <div class="col-md-10">
+                <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <span class="navbar-brand visible-xs-block">Navigation &rarr;</span>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LAPTOP<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="acer.html">ACER</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="apple.html">APPLE</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="asus.html">ASUS</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="lenovo.html">LENOVO</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="msi.html">MSI</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="toshiba.html">TOSHIBA</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRINTER<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="hp.html">HP</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="epson.html">EPSON</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="xerox.html">XEROX</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="accessorise.html">ACCESSORIS</a></li>
+                        <li><a href="#">SPAREPART</a></li>
+                      </ul>
+                      <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                          <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="bottom" title="Sign In or Sign Up"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="signin.html">Sign In</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="signup.html">Sign Up</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="shoppingcart.html" data-toggle="tooltip" data-placement="bottom" title="Your Shopping Cart">
+                            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                        </li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+     </div><!--end of menu-->
+
+    <div class="container signup">
+        <div class="row">
+            <div class="col-md-4 well well-sm well-custom">
+                <h3><a href="#"><span class="glyphicon glyphicon-user"></span></a> Sign up!</h3>
+                <form action="#" method="post" class="form" role="form">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <input class="form-control" name="firstname" placeholder="First Name" type="text"> 
+                        <span class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+                    </div>
+                </div>
+                <input class="form-control" name="email" placeholder="Your Email" type="email">
+                <span class="text-danger"><?php if (isset($email_error)) echo $email_error; ?></span>
+
+                <input class="form-control" name="password" placeholder="New Password" type="password" />
+                <span class="text-danger"><?php if (isset($password_error)) echo $password_error; ?></span>
+                <input class="form-control" name="repassword" placeholder="Re-Password" type="password" />
+                <span class="text-danger"><?php if (isset($repassword_error)) echo $repassword_error; ?></span>
+                <label for="">
+                    Birth Date</label>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <input class="form-control"  type="datetime" id="example1" placeholder="dd/mm/yyyy">
+                    </div>
+                    
+                </div>
+                <label class="radio-inline">
+                    <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
+                    Male
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
+                    Female
+                </label>
+                <br />
+                <br />
+                <button class="btn btn-lg btn-primary btn-block" value="Sign Up" name="signup"   type="submit">
+                    Sign up</button>
+                </form>
+                <span class="text-success"><?php if (isset($successmsg)) { echo $successmsg; } ?></span>
+                <span class="text-danger"><?php if (isset($errormsg)) { echo $errormsg; } ?></span>
+            </div>
+        </div>
+    </div><!--end of signup-->
+
+    <footer class="container">
+        <div class="col-md-3">
+            <img src="images/logo.png">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="col-md-6">
+            <div class="col-md-4 list">
+                <p>INFORMATION</p>
+                <ul>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">ORDER AND RETURN</a></li>
+                    <li><a href="">HOW TO ORDER</a></li>
+                    <li><a href="">LOREM IPSUM</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 list">
+                <p>WHY BUY FROM US</p>
+                <ul>
+                    <li><a href="">FREE SHIPPING</a></li>
+                    <li><a href="">CHEAP</a></li>
+                    <li><a href="">SECURE SHOPPING</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 list">
+                <p>MY ACCOUNT</p>
+                <ul>
+                    <li><a href="">SIGN IN</a></li>
+                    <li><a href="">VIEW CART</a></li>
+                    <li><a href="">MY WHISLIST</a></li>
+                    <li><a href="">TRACK MY ORDER</a></li>
+                    <li><a href="">LOREM IPSUM</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-md-12">
+                        <p>NEW LETTER</p>
+                        <div class="row">
+                            <form class="navbar-form navbar-left">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                                <button onclick="window.alert('Success')" type="submit" class="btn btn-default">GO!</button>
+                            </form>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#">
+                        <span class="social social-facebook" aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <span class="social social-facebook"></span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <span class="social social-facebook"></span>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">
+                        <span class="social social-facebook"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+     </footer><!--end of footer-->
+
+     <div class="footerbot container">
+        <p>Circle Table Tech. &copy; 2016</p>
+     </div>
+ </div><!--end of footerbot-->
+
+ <!-- Load jQuery and bootstrap datepicker scripts -->
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () { 
+                $('#example1').datepicker({
+                    format: "dd/mm/yyyy"
+                   
+                });  
+                   
+            });
+        </script>
+</body>
+</html>
